@@ -26,7 +26,7 @@ async function startQueues(): Promise<void> {
   const emailChannel = await createConnection() as Channel;
   await consumeAuthEmailMessages(emailChannel);
   await consumeOrderEmailMessages(emailChannel);
-  const verificationLink = `${config.CLIENT_URL}/confirm_email?v_token=memeksempit`;
+  const verificationLink = `${config.CLIENT_URL}/confirm_email?v_token=ahsdakshdkas324hk`;
   const messageDetails: IEmailMessageDetails = {
     receiverEmail: `${config.SENDER_EMAIL}`,
     resetLink: verificationLink,
